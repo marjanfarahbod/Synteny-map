@@ -5,8 +5,27 @@ This folder contains small, task-focused scripts for preparing GTEx/mouse expres
 
 This code was developed as part of an exploratory analysis and reflects the structure used during that process. The goal in section 3, 2 and 1 was to extract the required samples and the ortholog genes present in datasets from both species and have them in the same order for down stream analyses. There was some back and forth and redundancies in the pipeline since I learned about duplicates and inconsistencies as I processed the data. 
 
-## Data files and references
+## Input Data
 
+GTEx gene TPM [from here](https://gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression)\
+`GTEx_Analysis_v10_RNASeQCv2.4.2_gene_tpm.gct`
+
+GTEx sample attributes [from here](https://gtexportal.org/home/downloads/adult-gtex/metadata)\
+`GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt`
+
+Mouse expression data from [Li et al. 2017](https://doi.org/10.1038/s41598-017-04520-z) `Lietal_41598_2017_4520_MOESM2_ESM.xls` (table1)
+
+[Mouse tissue abbreviation table](https://www.nature.com/articles/s41598-017-04520-z/tables/1)
+
+Human Transcription Factors from [Lambert et al. 2018](https://doi.org/10.1016/j.cell.2018.01.029)\
+`HumanTFsLambert2018_mmc2.xlsx`
+
+Mouse Transcription Factors from [here](https://www.tfcheckpoint.org/). [Publication](https://www.sciencedirect.com/science/article/pii/S1097276522012151?via%3Dihub)\
+Relevant column: `animal_tfdb_Mus_musculus.present` - If the gene has an ortholog …
+
+Ortholog map from [UCSC](https://genome.ucsc.edu/cgi-bin/hgTables)
+
+---
 
 ## Workflow
 
@@ -40,4 +59,4 @@ Run scripts with `python3 path/to/script.py` from the repo root. Paths in defaul
 
 This repository was developed with the assistance of OpenAI Codex.
 
-Code was generated through interative prompting and subsequently reviewed, modified, and validated by the author. 
+Code was generated through interactive prompting and subsequently reviewed, modified, and validated by the author. 
